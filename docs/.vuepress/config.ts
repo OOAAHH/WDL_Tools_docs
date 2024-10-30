@@ -3,7 +3,7 @@ import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
 
 export default defineUserConfig({
-  base: '/',
+  base: '/WDL_Tools_docs/',
   lang: 'zh-CN',
   locales: {
     '/': {
@@ -22,7 +22,7 @@ export default defineUserConfig({
 
   theme: plumeTheme({
     // 添加您的部署域名
-    hostname: 'https://ooaahh.github.io/WDL_Tools_docs/',
+    hostname: 'WDL_Tools_docs',
 
     // 关闭博客功能
     blog: false,
