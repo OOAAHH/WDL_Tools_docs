@@ -67,7 +67,7 @@ permalink: /article/ze67032e/
 
 
 <ImageCard
-  image="Pics/scfig1_gif.gif"
+  image="../../Pics/scfig1_gif.gif"
   title="注意右上角的绿色按钮"
   description="注意右上角的绿色按钮，点击即可开始分析，并在3秒后自动跳转到分析历史界面。"
   href="/"
@@ -79,7 +79,7 @@ permalink: /article/ze67032e/
 任务完成后，您可以在分析历史中看到您的任务。点击任务名称，进入任务详情页面。在任务详情页面，您可以查看/下载结果。
 
 <ImageCard
-  image="Pics/scfig2_gif.gif"
+  image="../../Pics/scfig2_gif.gif"
   title="任务分析历史"
   description="现在这张图片展示了任务分析历史的详情，选中本次进行的实验。新的页面展示了本次实验的所有状态信息，你可以在这里再次查阅输入和输出参数。当然你也可以在这里查看或下载结果。"
   href="/"
