@@ -111,7 +111,7 @@ permalink: /article/ze67032e/
 在这个示例中，我们需要的文件在 **"outs"** 文件夹中，让我们逐渐深入文件夹，找到我们需要的文件。
 
 <ImageCard
-  image="Pics/scfig3_gif.gif"
+  image="../../Pics/scfig3_gif.gif"
   title="查看工作流的计算结果"
   description="让我们逐级打开文件夹，找到我们需要的文件。所有的日志以及结果文件都会列出在这里。"
   href="/"
@@ -124,7 +124,7 @@ permalink: /article/ze67032e/
 我们需要这里的 **$ID_filtered_feature_bc_matrix.h5ad** 文件，让我们点击下载。
 
 <ImageCard
-  image="Pics/scfig4_gif.gif"
+  image="../../Pics/scfig4_gif.gif"
   title="下载我们感兴趣的结果"
   description="这里我们展示了如何下载我们感兴趣的结果。我们逐级打开目录，到最后一层。然后在我们感兴趣的结果后面点击下载。"
   href="/"
