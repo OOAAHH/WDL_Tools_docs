@@ -22,7 +22,7 @@ export default defineUserConfig({
 
   theme: plumeTheme({
     // 添加您的部署域名
-    // hostname: 'https://your_site_url',
+    hostname: 'https://ooaahh.github.io/WDL_Tools_docs/',
 
     // 关闭博客功能
     blog: false,
