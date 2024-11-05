@@ -144,4 +144,10 @@ permalink: /article/ze67032e/
 **当然不是**，我们在这里只展示了BioOS的冰山一角，BioOS的真正能力将在您尝试构建数据模型/实体之后展现。下面，让我们从一个稍微复杂的例子开始，一步一步的学习如何调度BioOS强大的计算能力。
 
 
+<iframe
+  src="https://marimo.app/l/c7h6pz?embed=true"
+  width="100%"
+  height="300"
+  frameborder="0"
+></iframe>
 
