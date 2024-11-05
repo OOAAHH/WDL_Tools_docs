@@ -1,4 +1,4 @@
-# ribo-cv
+# ribo-cv 找好定位，想好受众，再提笔写。
 
 The Site is generated using [vuepress](https://vuepress.vuejs.org/) and [vuepress-theme-plume](https://github.com/pengzhanbo/vuepress-theme-plume)
 
