@@ -1,4 +1,4 @@
-export const siteData = JSON.parse("{\"base\":\"/\",\"lang\":\"zh-CN\",\"title\":\"\",\"description\":\"\",\"head\":[],\"locales\":{\"/\":{\"title\":\"RiboCV\",\"lang\":\"zh-CN\",\"description\":\"Docs here\"},\"/en/\":{\"title\":\"RiboCV\",\"lang\":\"en-US\",\"description\":\"Docs here\"}}}")
+export const siteData = JSON.parse("{\"base\":\"/WDL_Tools_docs/\",\"lang\":\"zh-CN\",\"title\":\"\",\"description\":\"\",\"head\":[],\"locales\":{\"/\":{\"title\":\"RiboCV\",\"lang\":\"zh-CN\",\"description\":\"Docs here\"},\"/en/\":{\"title\":\"RiboCV\",\"lang\":\"en-US\",\"description\":\"Docs here\"}}}")
 
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept()

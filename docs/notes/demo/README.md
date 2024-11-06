@@ -1,4 +1,9 @@
-# SRA_Analysis_WDL
+---
+title: Introduction
+createTime: 2024/11/06 14:45:46
+permalink: /demo/0bkg7fdfz/
+---
+# WDL Tools for BioOS
 - An Auto Pipeline
 - Robustness
 - Designed for Bio-os

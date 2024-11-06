@@ -20,7 +20,7 @@ export default defineThemeConfig({
   locales: {
     '/': {
       profile: {
-        avatar: 'https://theme-plume.vuejs.press/plume.png',
+        avatar: '/Pics/logo.png',
         name: 'RiboCV',
         description: 'Docs here',
         // circle: true,
