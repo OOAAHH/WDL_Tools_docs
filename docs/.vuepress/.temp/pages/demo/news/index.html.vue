@@ -1,4 +1,5 @@
-<template><div><ul>
+<template><div><h2 id="wdl-tools-for-bioos" tabindex="-1"><a class="header-anchor" href="#wdl-tools-for-bioos"><span>WDL Tools for BioOS</span></a></h2>
+<ul>
 <li>An Auto Pipeline</li>
 <li>Robustness</li>
 <li>Designed for Bio-os</li>

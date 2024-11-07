@@ -44,7 +44,7 @@ export default defineUserConfig({
        */
       markdownEnhance: {
         demo: true,
-      //   include: true,
+        include: true,
       //   chart: true,
       //   echarts: true,
       //   mermaid: true,

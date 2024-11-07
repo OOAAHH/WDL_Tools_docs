@@ -1,5 +1,5 @@
 import comp from "/Users/hughes/docs/WDL_Tools_docs/docs/.vuepress/.temp/pages/demo/qxmbevac/index.html.vue"
-const data = JSON.parse("{\"path\":\"/demo/qxmbevac/\",\"title\":\"foo\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"foo\",\"createTime\":\"2024/10/30 11:12:46\",\"permalink\":\"/demo/qxmbevac/\"},\"headers\":[],\"readingTime\":{\"minutes\":0.04,\"words\":11},\"filePathRelative\":\"notes/demo/foo.md\",\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/demo/qxmbevac/\",\"title\":\"foo\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"foo\",\"createTime\":\"2024/10/30 11:12:46\",\"permalink\":\"/demo/qxmbevac/\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0.04,\"words\":11},\"filePathRelative\":\"notes/demo/foo.md\",\"bulletin\":false}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

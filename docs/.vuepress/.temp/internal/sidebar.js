@@ -1,4 +1,4 @@
-export const sidebar = {"/en/":{"/demo":{"items":["","foo","bar"],"prefix":"/en/notes/demo/"}},"/":{"/demo":{"items":["","foo","bar"],"prefix":"/notes/demo/"}},"__auto__":{},"__home__":{}}
+export const sidebar = {"/en/":{"/demo":{"items":["","foo","bar"],"prefix":"/en/notes/demo/"}},"/":{"/demo":{"items":"auto","prefix":"/notes/demo/"},"/01_10X_Genomics/":{"items":[{"text":"导引","link":"README.md","items":["分论",{"text":"单细胞转录组测序/scRNA-seq","link":"scRNA-seq.md"}]}],"prefix":"/notes/01_10X_Genomics/"}},"__auto__":{"/notes/demo/":[{"text":"bar","link":"/demo/0bkg7fdz/","items":[]},{"text":"foo","link":"/demo/qxmbevac/","items":[]}]},"__home__":{"/notes/demo/":"/demo/news/"}}
 
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept()

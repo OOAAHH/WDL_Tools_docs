@@ -1,0 +1,16 @@
+import comp from "/Users/hughes/docs/WDL_Tools_docs/docs/.vuepress/.temp/pages/01_10X_Genomics/scRNA-seq.html.vue"
+const data = JSON.parse("{\"path\":\"/01_10X_Genomics/scRNA-seq\",\"title\":\"10X Genomics scRNA-seq 数据分析\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"10X Genomics scRNA-seq 数据分析\",\"createTime\":\"2024/10/30 11:20:18\",\"permalink\":\"/01_10X_Genomics/scRNA-seq\",\"gitInclude\":[]},\"headers\":[{\"level\":2,\"title\":\"对于一个典型的10X Genomics scRNA-seq实验，我们推荐使用如下的json文件：\",\"slug\":\"对于一个典型的10x-genomics-scrna-seq实验-我们推荐使用如下的json文件\",\"link\":\"#对于一个典型的10x-genomics-scrna-seq实验-我们推荐使用如下的json文件\",\"children\":[]},{\"level\":2,\"title\":\"提交任务\",\"slug\":\"提交任务\",\"link\":\"#提交任务\",\"children\":[]},{\"level\":2,\"title\":\"查看结果\",\"slug\":\"查看结果\",\"link\":\"#查看结果\",\"children\":[]}],\"readingTime\":{\"minutes\":4.76,\"words\":1428},\"filePathRelative\":\"notes/01_10X_Genomics/scRNA-seq.md\",\"categoryList\":[{\"id\":\"4358b5\",\"sort\":10001,\"name\":\"notes\"},{\"id\":\"6c0bd5\",\"sort\":10002,\"name\":\"01_10X_Genomics\"}],\"bulletin\":false}")
+export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}
