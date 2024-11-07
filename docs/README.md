@@ -7,8 +7,8 @@ config:
     full: true
     background: tint-plate
     hero:
-      name: RiboCV
-      tagline: Ctrl + C & Ctrl + V
+      name: Ribo🄲🆅
+      tagline: Ctrl + 🄲 & Ctrl + 🆅
       text: 让复杂的工作变得只要学会复制粘贴就能上手
       actions:
         -
@@ -17,6 +17,6 @@ config:
           link: ./quickstart.md
         -
           theme: alt
-          text: Github →
+          text: 代码在这 →
           link: https://github.com/rnacentre/WDL_Tools
 ---

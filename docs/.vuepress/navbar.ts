@@ -14,7 +14,7 @@ export const zhNavbar = defineNavbarConfig([
   },
 
   {
-    text: '简介',
+    text: '简介和更新日志',
     link: '/notes/intruction.md' },
 ])
 

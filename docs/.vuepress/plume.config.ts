@@ -33,7 +33,7 @@ export default defineThemeConfig({
     },
     '/en/': {
       profile: {
-        avatar: 'https://theme-plume.vuejs.press/plume.png',
+        avatar: '/Pics/logo.png',
         name: 'RiboCV',
         description: 'Docs here',
         // circle: true,

@@ -1,7 +1,7 @@
 <template><div><p>为了便于工作流的可重复性，我们推荐您使用json文件来描述和存档您的实验参数。</p>
 <h1 id="写在前面" tabindex="-1"><a class="header-anchor" href="#写在前面"><span>写在前面</span></a></h1>
-<p>这里会涉及到BioOS文件管理的相关内容，请参考<RouteLink to="/BioOS/">BioOS文件管理</RouteLink></p>
-<p>在这里，我们假设您已经对平台的使用有了基础的了解，并创建了必要的文件夹。如果还没有，请参考<RouteLink to="/BioOS/">动手学BioOS计算</RouteLink></p>
+<p>这里会涉及到BioOS文件管理的相关内容，请参考<RouteLink to="/notes/BioOS/">BioOS文件管理</RouteLink></p>
+<p>在这里，我们假设您已经对平台的使用有了基础的了解，并创建了必要的文件夹。如果还没有，请参考<RouteLink to="/notes/BioOS/">动手学BioOS计算</RouteLink></p>
 <p>请注意，我们不要求您对json文件、WDL文件或者云计算有深入的了解，您只需要知道如何使用json文件来描述您的实验参数。我们的目标是您只需要知道如何“复制、粘贴”就能完成您的实验。</p>
 <p>让我们开始吧！</p>
 <h2 id="对于一个典型的10x-genomics-scrna-seq实验-我们推荐使用如下的json文件" tabindex="-1"><a class="header-anchor" href="#对于一个典型的10x-genomics-scrna-seq实验-我们推荐使用如下的json文件"><span>对于一个典型的10X Genomics scRNA-seq实验，我们推荐使用如下的json文件：</span></a></h2>
@@ -109,11 +109,6 @@
 <p>非常好的问题！当你尝试把一件简单的事情重复做上一万遍的时候，其复杂度将会指数增加📈。</p>
 </blockquote>
 <p><strong>当然不是</strong>，我们在这里只展示了BioOS的冰山一角，BioOS的真正能力将在您尝试构建数据模型/实体之后展现。下面，让我们从一个稍微复杂的例子开始，一步一步的学习如何调度BioOS强大的计算能力。</p>
-<iframe
-  src="https://marimo.app/l/c7h6pz?embed=true"
-  width="100%"
-  height="300"
-  frameborder="0"
-></iframe></div></template>
+</div></template>
 
 
