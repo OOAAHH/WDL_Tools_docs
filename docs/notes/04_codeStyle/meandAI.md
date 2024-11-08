@@ -681,7 +681,7 @@ if __name__ == "__main__":
 > 仔细看看下面的代码，这就是你加上o1-mini的能力
 
 <iframe
-  src="https://static.marimo.app/static/meandai-bphn"
+  src="https://marimo.app/l/le3aif"
   width="100%"
   height="600"
   frameborder="0"
