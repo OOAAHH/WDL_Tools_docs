@@ -21,7 +21,16 @@ permalink: /notes/onProgress/
 </div>
 
 colab 嵌入
-<script src="https://gist.github.com/OOAAHH/468e5aa000a102dba663437a80019b90.js"></script>
+
+<div style="position: relative; padding: 30% 45%;">
+  <iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"
+          src="https://gist.github.com/OOAAHH/468e5aa000a102dba663437a80019b90.js"
+          frameborder="no"
+          scrolling="no">
+  </iframe>
+</div>
+
+
 
 
 ## 标题 2
