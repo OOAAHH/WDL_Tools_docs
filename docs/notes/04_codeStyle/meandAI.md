@@ -676,6 +676,19 @@ if __name__ == "__main__":
 
 :::
 
+#### 代码的运行效果
+
+> 仔细看看下面的代码，这就是你加上o1-mini的能力
+
+<iframe
+  src="https://static.marimo.app/static/meandai-bphn"
+  width="100%"
+  height="600"
+  frameborder="0"
+></iframe>
+
+
+
 ## 结语
 
 > 我必须在这里重申 ==“AI放大了人类的能力边界”==，代码的最终结果极大的取决于 ==“人的思考”== 的质量。
