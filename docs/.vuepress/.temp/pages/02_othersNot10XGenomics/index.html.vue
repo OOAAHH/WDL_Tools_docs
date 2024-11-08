@@ -3,10 +3,10 @@
 <p>统一使用StarSolo工具，但每种组学分别对应不同的参数文件。</p>
 </blockquote>
 <ul>
-<li><RouteLink to="/notes/02_othersNot10XGenomics/Smart-seq2.html">Smart-seq2</RouteLink></li>
-<li><RouteLink to="/notes/02_othersNot10XGenomics/Drop-seq.html">Drop-seq</RouteLink></li>
-<li><RouteLink to="/notes/02_othersNot10XGenomics/Seq-well.html">Seq-well</RouteLink></li>
-<li><RouteLink to="/notes/02_othersNot10XGenomics/BD-Rhapsody.html">BD-Rhapsody</RouteLink></li>
+<li><RouteLink to="/notes/02_othersNot10XGenomics/onProgress.html">Smart-seq2</RouteLink></li>
+<li><RouteLink to="/notes/02_othersNot10XGenomics/onProgress.html">Drop-seq</RouteLink></li>
+<li><RouteLink to="/notes/02_othersNot10XGenomics/onProgress.html">Seq-well</RouteLink></li>
+<li><RouteLink to="/notes/02_othersNot10XGenomics/onProgress.html">BD-Rhapsody</RouteLink></li>
 </ul>
 </div></template>
 

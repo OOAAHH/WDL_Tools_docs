@@ -12,7 +12,7 @@ const zhDemoNote = defineNoteConfig({
 // 10X Genomics
 const zh10xDemoNote = defineNoteConfig({
   dir: '01_10X_Genomics', // 目录名
-  link: '/01_10X_Genomics/', // 网页链接
+  link: '/01_10X_Genomics', // 网页链接
   sidebar: [
         // side bar 1，导引
         {
@@ -29,22 +29,21 @@ const zh10xDemoNote = defineNoteConfig({
 )
 
 // 02_othersNot10XGenomics
-const zhOtherDemoNote = defineNoteConfig({
-  dir: '02_othersNot10XGenomics',
-  link: '/02_othersNot10XGenomics/',
-  sidebar: [
-    // side bar 1，导引
-    {
-      text: '导引',
-      link: 'README.md',
+const zhOther = defineNoteConfig({
+  dir: '02_othersNot10XGenomics', // 目录名
+  link: '/02_othersNot10XGenomics', // 网页链接
+  sidebar: 'auto',
     },
-  ],
-})
+)
 
 export const zhNotes = defineNotesConfig({
   dir: 'notes',
   link: '/',
-  notes: [zhDemoNote,zh10xDemoNote],
+  notes: [
+    zhDemoNote,
+    zh10xDemoNote,
+    zhOther,
+  ],
 })
 
 /* =================== locale: en-US ======================= */
