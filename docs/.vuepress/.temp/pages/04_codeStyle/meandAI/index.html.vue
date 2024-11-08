@@ -1,0 +1,106 @@
+<template><div><h3 id="引言" tabindex="-1"><a class="header-anchor" href="#引言"><span>引言</span></a></h3>
+<blockquote>
+<p>通过几个例子展示了用GPT敲代码的几个模式。</p>
+</blockquote>
+<div class="language-txt line-numbers-mode" data-ext="txt" data-title="txt"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes light-plus aurora-x vp-code" v-pre=""><code><span class="line"><span>**工程控制论正在推动电子计算机技术革命的深入。这样一个现实已经来到了人类面前:由电子计算机和机器智能装备起来的人,已经成为更有作为、更高超的人!** </span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>钱学森 《工程控制论》</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><pre><code>    GPT在现代编程中的角色
+    结合工程与哲学的重要性
+文档目的
+    展示如何通过结构化编程提升代码可读性和效率
+    探讨创造性思维在编程过程中的应用
+</code></pre>
+<p>第一部分：分享经验</p>
+<pre><code>个人经历
+    使用GPT进行编程的初衷与动机
+    结构化编程方法的引入
+经验总结
+    保持代码可读性的关键因素
+    结构化方法在实际项目中的应用效果
+</code></pre>
+<p>第二部分：结构化编程与GPT的协同</p>
+<pre><code>结构化编程的重要性
+    代码可读性与可维护性的关系
+    函数式编程的优势
+应对长代码的挑战
+    GPT处理超长代码的局限性
+    通过结构化方法提升代码管理效率
+并行化结构的引入
+    提高编程效率的方法
+    并行化在大型项目中的应用案例
+GPT作为协作伙伴
+    将GPT视为乙方的合作模式
+    规划里程碑与产品功能点的策略
+版本演进的区别
+    GPT3.5、Copilot、GPT4与o1-preview的对比
+    GPT作为放大器与辅助工具的定位
+</code></pre>
+<p>第三部分：任务设计与实现</p>
+<pre><code>任务启动
+    示例任务描述：“我有一个XXX任务，我应该如何设计实现。”
+GPT的响应结构
+    项目整体结构的建议
+    主要功能的实现方法
+    功能验证的步骤
+    错误处理机制
+技术选型
+    如何根据项目需求选择合适的技术栈
+最小可交付产品（MVP）的验证
+    MVP的重要性与实施步骤
+    使用NW系列代码的具体示例
+</code></pre>
+<p>第四部分：保持与GPT的理解一致</p>
+<pre><code>共同理解问题
+    确保人类与GPT对问题有相同的认知
+案例分析
+    NW算法的技术分支选择
+    GPT选择启发式算法的合理性与用户需求的差异
+</code></pre>
+<p>第五部分：思想的边疆</p>
+<pre><code>四象限图解析
+    程序、编程系统、编程产品、编程系统产品的关系
+完整产品的构建
+    定义完整产品的标准
+    GPT在扩展思维与能力边界中的作用
+思想的核心地位
+    人类思维在编程与产品开发中的重要性
+</code></pre>
+<p>第六部分：创造性冲动与编程</p>
+<pre><code>内心渴望与创造冲动
+    创作冲动的本质与转化
+罗素的冲动理论
+    占有型冲动与创造型冲动的区别
+    分享与奉献驱动的创造型冲动的优势
+冲动的社会意义
+    冲动在社会中的良性疏导
+    冲动与理性的平衡
+</code></pre>
+<p>第七部分：工程与哲学的融合</p>
+<pre><code>哲学思想在编程中的体现
+    创造性思维如何影响编程实践
+保持创造能量的方法
+    在技术工作中维持创作冲动的策略
+实际案例
+    工程项目中哲学思想的具体应用实例
+</code></pre>
+<p>结论</p>
+<pre><code>关键要点总结
+    结构化编程与GPT协同的优势
+    创造性思维在编程中的重要性
+未来展望
+    GPT辅助编程的发展方向
+    工程与哲学融合的潜在前景
+</code></pre>
+<p>附录</p>
+<pre><code>示例代码
+    使用NW系列代码的详细示例
+参考文献
+    相关书籍与论文列表
+术语解释
+    文中涉及的专业术语定义
+</code></pre>
+</div></template>
+
+

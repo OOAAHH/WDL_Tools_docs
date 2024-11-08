@@ -3,11 +3,11 @@
 <p>每种组学分别对应不同的工具</p>
 </blockquote>
 <ul>
-<li>scRNA-seq</li>
-<li>ATAC-seq</li>
-<li>VDJ-seq</li>
-<li>Spatial-seq</li>
-<li>Arg multi data</li>
+<li><RouteLink to="/notes/01_10X_Genomics/scRNA-seq.html">scRNA-seq</RouteLink></li>
+<li><RouteLink to="/notes/01_10X_Genomics/ATAC-seq.html">ATAC-seq</RouteLink></li>
+<li><RouteLink to="/notes/01_10X_Genomics/VDJ-seq.html">VDJ-seq</RouteLink></li>
+<li><RouteLink to="/notes/01_10X_Genomics/Spatial-seq.html">Spatial-seq</RouteLink></li>
+<li><RouteLink to="/notes/01_10X_Genomics/Arg-multi-data.html">Arg multi data</RouteLink></li>
 </ul>
 </div></template>
 
