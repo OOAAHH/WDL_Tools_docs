@@ -20,6 +20,10 @@ permalink: /notes/onProgress/
 
 </div>
 
+colab 嵌入
+<script src="https://gist.github.com/OOAAHH/468e5aa000a102dba663437a80019b90.js"></script>
+
+
 ## 标题 2
 
 ### 标题 3
