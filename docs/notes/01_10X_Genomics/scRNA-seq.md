@@ -71,7 +71,7 @@ permalink: /01_10X_Genomics/scRNA-seq/
 
 
 <ImageCard
-  image="../.vuepress/public/images/scfig1_gif.gif"
+  image="../../.vuepress/public/images/scfig1_gif.gif"
   title="注意右上角的绿色按钮"
   description="注意右上角的绿色按钮，点击即可开始分析，并在3秒后自动跳转到分析历史界面。"
   href="/"
