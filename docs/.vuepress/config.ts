@@ -3,7 +3,7 @@ import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
 
 export default defineUserConfig({
-  base: '/WDL_Tools_docs/',
+  base: '/',
   lang: 'zh-CN',
   locales: {
     '/': {

@@ -69,9 +69,10 @@ permalink: /01_10X_Genomics/scRNA-seq/
 
 然后，点击页面上的绿色按钮"开始分析"，等待任务完成。
 
+![图片](./scfig1_gif.gif)
 
 <ImageCard
-  image="../docs/.vuepress/public/images/scfig1_gif.gif"
+  image="./scfig1_gif.gif"
   title="注意右上角的绿色按钮"
   description="注意右上角的绿色按钮，点击即可开始分析，并在3秒后自动跳转到分析历史界面。"
   href="/"
