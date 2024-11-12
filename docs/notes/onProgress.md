@@ -11,7 +11,7 @@ permalink: /notes/onProgress/
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=C16E12&width=435&lines=%E6%B0%B8%E8%BF%9C%E7%9B%B8%E4%BF%A1%E7%BE%8E%E5%A5%BD%E7%9A%84%E4%BA%8B%E6%83%85%E5%8D%B3%E5%B0%86%E5%8F%91%E7%94%9F)](https://git.io/typing-svg)
 
 
-## 视频嵌入
+## 视频嵌入测试 自动播放 不静音 响应式
 
 <div style="position: relative; padding: 30% 45%;">
 <iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="https://player.bilibili.com/player.html?isOutside=true&aid=80433022&bvid=BV1GJ411x7h7&cid=137649199&p=1&as_wide=1&high_quality=1&danmaku=0" frameborder="no" scrolling="no">
@@ -20,7 +20,7 @@ permalink: /notes/onProgress/
 
 </div>
 
-colab 嵌入
+## colab 嵌入测试 gist 非响应式
 
 <div style="position: relative; padding: 30% 45%;">
   <iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"
@@ -30,8 +30,14 @@ colab 嵌入
   </iframe>
 </div>
 
+## marimo.app 嵌入测试 非响应式 预定义hight via。WASM
 
-
+<iframe
+  src="https://marimo.app/l/c7h6pz?embed=true"
+  width="100%"
+  height="600"
+  frameborder="0"
+></iframe>
 
 ## 标题 2
 
@@ -340,11 +346,4 @@ span {
 
 [^second]: 脚注文字。
 
-## online notebook, based on marimo.app
 
-<iframe
-  src="https://marimo.app/l/c7h6pz?embed=true"
-  width="100%"
-  height="600"
-  frameborder="0"
-></iframe>

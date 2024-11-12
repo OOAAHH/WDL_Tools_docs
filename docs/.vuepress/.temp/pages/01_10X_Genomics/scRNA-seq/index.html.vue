@@ -1,4 +1,7 @@
-<template><div><h2 id="_10x-genomics-scrna-seq" tabindex="-1"><a class="header-anchor" href="#_10x-genomics-scrna-seq"><span>10X Genomics scRNA-seq</span></a></h2>
+<template><div><blockquote>
+<p><a href="https://github.com/rnacentre/WDL_Tools/tree/main/_CellRanger_count" target="_blank" rel="noopener noreferrer">WDL代码</a></p>
+</blockquote>
+<h2 id="_10x-genomics-scrna-seq" tabindex="-1"><a class="header-anchor" href="#_10x-genomics-scrna-seq"><span>10X Genomics scRNA-seq</span></a></h2>
 <p>为了便于工作流的可重复性，我们推荐您使用json文件来描述和存档您的实验参数。</p>
 <h2 id="写在前面" tabindex="-1"><a class="header-anchor" href="#写在前面"><span>写在前面</span></a></h2>
 <p>这里会涉及到BioOS文件管理的相关内容，请参考<RouteLink to="/notes/BioOS/">BioOS文件管理</RouteLink></p>
@@ -46,7 +49,6 @@
 <h3 id="提交任务" tabindex="-1"><a class="header-anchor" href="#提交任务"><span>提交任务</span></a></h3>
 <p>让我们回到BioOS平台，来到我们的cellrangerTest页面。试试看，找到页面上的&quot;运行参数&quot;选项卡&gt;输入参数&gt;&quot;上传JSON文件&quot;，将您的json文件上传。</p>
 <p>然后，点击页面上的绿色按钮&quot;开始分析&quot;，等待任务完成。</p>
-<p><img src="@source/notes/01_10X_Genomics/scfig1_gif.gif" alt="图片"></p>
 <ImageCard
   image="../../images/scfig1_gif.gif"
   title="注意右上角的绿色按钮"
@@ -58,7 +60,7 @@
 <h3 id="查看结果" tabindex="-1"><a class="header-anchor" href="#查看结果"><span>查看结果</span></a></h3>
 <p>任务完成后，您可以在分析历史中看到您的任务。点击任务名称，进入任务详情页面。在任务详情页面，您可以查看/下载结果。</p>
 <ImageCard
-  image="../.vuepress/public/images/scfig2_gif.gif"
+  image="../../images/scfig2_gif.gif"
   title="任务分析历史"
   description="现在这张图片展示了任务分析历史的详情，选中本次进行的实验。新的页面展示了本次实验的所有状态信息，你可以在这里再次查阅输入和输出参数。当然你也可以在这里查看或下载结果。"
   href="/"
@@ -87,7 +89,7 @@
 </blockquote>
 <p>在这个示例中，我们需要的文件在 <strong>&quot;outs&quot;</strong> 文件夹中，让我们逐渐深入文件夹，找到我们需要的文件。</p>
 <ImageCard
-  image="../.vuepress/public/images/scfig3_gif.gif"
+  image="../../images/scfig3_gif.gif"
   title="查看工作流的计算结果"
   description="让我们逐级打开文件夹，找到我们需要的文件。所有的日志以及结果文件都会列出在这里。"
   href="/"
@@ -97,7 +99,7 @@
 <h2 id="🤔-如果你想在本地查看结果" tabindex="-1"><a class="header-anchor" href="#🤔-如果你想在本地查看结果"><span>🤔 如果你想在本地查看结果？</span></a></h2>
 <p>我们需要这里的 <strong>$ID_filtered_feature_bc_matrix.h5ad</strong> 文件，让我们点击下载。</p>
 <ImageCard
-  image="../.vuepress/public/images/scfig4_gif.gif"
+  image="../../images/scfig4_gif.gif"
   title="下载我们感兴趣的结果"
   description="这里我们展示了如何下载我们感兴趣的结果。我们逐级打开目录，到最后一层。然后在我们感兴趣的结果后面点击下载。"
   href="/"
@@ -111,6 +113,21 @@
 <p>非常好的问题！当你尝试把一件简单的事情重复做上一万遍的时候，其复杂度将会指数增加📈。</p>
 </blockquote>
 <p><strong>当然不是</strong>，我们在这里只展示了BioOS的冰山一角，BioOS的真正能力将在您尝试构建数据模型/实体之后展现。下面，让我们从一个稍微复杂的例子开始，一步一步的学习如何调度BioOS强大的计算能力。</p>
-</div></template>
+<h2 id="json-注释" tabindex="-1"><a class="header-anchor" href="#json-注释"><span>JSON 注释</span></a></h2>
+<div class="language-json line-numbers-mode" data-ext="json" data-title="json"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes light-plus aurora-x vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">{</span></span>
+<span class="line"><span style="--shiki-light:#CD3131;--shiki-dark:#FF5370">  #</span><span style="--shiki-light:#CD3131;--shiki-dark:#FF5370"> 逐行注释</span></span>
+<span class="line"><span style="--shiki-light:#0451A5;--shiki-dark:#89DDFF">  "</span><span style="--shiki-light:#0451A5;--shiki-dark:#C792EA">cellranger_count_workflow.chemistry</span><span style="--shiki-light:#0451A5;--shiki-dark:#89DDFF">"</span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">:</span><span style="--shiki-light:#A31515;--shiki-dark:#89DDFF"> "</span><span style="--shiki-light:#A31515;--shiki-dark:#C3E88D">auto</span><span style="--shiki-light:#A31515;--shiki-dark:#89DDFF">"</span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">,</span><span style="--shiki-light:#CD3131;--shiki-dark:#FF5370"> #</span><span style="--shiki-light:#CD3131;--shiki-dark:#FF5370"> chemistry选择</span><span style="--shiki-light:#CD3131;--shiki-dark:#FF5370"> 3'v2</span><span style="--shiki-light:#CD3131;--shiki-dark:#FF5370"> 等</span></span>
+<span class="line"><span style="--shiki-light:#0451A5;--shiki-dark:#89DDFF">  "</span><span style="--shiki-light:#0451A5;--shiki-dark:#C792EA">cellranger_count_workflow.cpu</span><span style="--shiki-light:#0451A5;--shiki-dark:#89DDFF">"</span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">:</span><span style="--shiki-light:#098658;--shiki-dark:#F78C6C"> 32</span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">,</span><span style="--shiki-light:#CD3131;--shiki-dark:#FF5370"> #</span><span style="--shiki-light:#CD3131;--shiki-dark:#FF5370"> cpu</span><span style="--shiki-light:#CD3131;--shiki-dark:#FF5370"> 核心数</span></span>
+<span class="line"><span style="--shiki-light:#0451A5;--shiki-dark:#89DDFF">  "</span><span style="--shiki-light:#0451A5;--shiki-dark:#C792EA">cellranger_count_workflow.disk_space</span><span style="--shiki-light:#0451A5;--shiki-dark:#89DDFF">"</span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">:</span><span style="--shiki-light:#A31515;--shiki-dark:#89DDFF"> "</span><span style="--shiki-light:#A31515;--shiki-dark:#C3E88D">300 GB</span><span style="--shiki-light:#A31515;--shiki-dark:#89DDFF">"</span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">,</span><span style="--shiki-light:#CD3131;--shiki-dark:#FF5370"> #</span><span style="--shiki-light:#CD3131;--shiki-dark:#FF5370"> 数据盘尺寸</span></span>
+<span class="line"><span style="--shiki-light:#0451A5;--shiki-dark:#89DDFF">  "</span><span style="--shiki-light:#0451A5;--shiki-dark:#C792EA">cellranger_count_workflow.fastq_file_paths</span><span style="--shiki-light:#0451A5;--shiki-dark:#89DDFF">"</span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">:</span><span style="--shiki-light:#0000FF;--shiki-dark:#F78C6C"> null</span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">,</span><span style="--shiki-light:#CD3131;--shiki-dark:#FF5370"> #</span><span style="--shiki-light:#CD3131;--shiki-dark:#FF5370"> 原始数据文件路径</span></span>
+<span class="line"><span style="--shiki-light:#0451A5;--shiki-dark:#89DDFF">  "</span><span style="--shiki-light:#0451A5;--shiki-dark:#C792EA">cellranger_count_workflow.memory</span><span style="--shiki-light:#0451A5;--shiki-dark:#89DDFF">"</span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">:</span><span style="--shiki-light:#A31515;--shiki-dark:#89DDFF"> "</span><span style="--shiki-light:#A31515;--shiki-dark:#C3E88D">225 GB</span><span style="--shiki-light:#A31515;--shiki-dark:#89DDFF">"</span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">,</span><span style="--shiki-light:#CD3131;--shiki-dark:#FF5370"> #</span><span style="--shiki-light:#CD3131;--shiki-dark:#FF5370"> 内存</span></span>
+<span class="line"><span style="--shiki-light:#0451A5;--shiki-dark:#89DDFF">  "</span><span style="--shiki-light:#0451A5;--shiki-dark:#C792EA">cellranger_count_workflow.no_bam</span><span style="--shiki-light:#0451A5;--shiki-dark:#89DDFF">"</span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">:</span><span style="--shiki-light:#A31515;--shiki-dark:#89DDFF"> "</span><span style="--shiki-light:#A31515;--shiki-dark:#C3E88D">False</span><span style="--shiki-light:#A31515;--shiki-dark:#89DDFF">"</span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">,</span><span style="--shiki-light:#CD3131;--shiki-dark:#FF5370"> #</span><span style="--shiki-light:#CD3131;--shiki-dark:#FF5370"> 是否不生成bam文件</span></span>
+<span class="line"><span style="--shiki-light:#0451A5;--shiki-dark:#89DDFF">  "</span><span style="--shiki-light:#0451A5;--shiki-dark:#C792EA">cellranger_count_workflow.reference_genome_tar_gz</span><span style="--shiki-light:#0451A5;--shiki-dark:#89DDFF">"</span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">:</span><span style="--shiki-light:#A31515;--shiki-dark:#89DDFF"> "</span><span style="--shiki-light:#A31515;--shiki-dark:#C3E88D">s3://bioos-wcnjupodeig44rr6t02v0/Example_10X_data/RAW/refdata-cellranger-GRCh38-3.0.0.tar.gz</span><span style="--shiki-light:#A31515;--shiki-dark:#89DDFF">"</span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">,</span><span style="--shiki-light:#CD3131;--shiki-dark:#FF5370"> #</span><span style="--shiki-light:#CD3131;--shiki-dark:#FF5370"> 参考基因组文件路径</span></span>
+<span class="line"><span style="--shiki-light:#0451A5;--shiki-dark:#89DDFF">  "</span><span style="--shiki-light:#0451A5;--shiki-dark:#C792EA">cellranger_count_workflow.run_id</span><span style="--shiki-light:#0451A5;--shiki-dark:#89DDFF">"</span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">:</span><span style="--shiki-light:#0000FF;--shiki-dark:#F78C6C"> null</span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">,</span><span style="--shiki-light:#CD3131;--shiki-dark:#FF5370"> #</span><span style="--shiki-light:#CD3131;--shiki-dark:#FF5370"> 运行ID</span></span>
+<span class="line"><span style="--shiki-light:#0451A5;--shiki-dark:#89DDFF">  "</span><span style="--shiki-light:#0451A5;--shiki-dark:#C792EA">cellranger_count_workflow.sample</span><span style="--shiki-light:#0451A5;--shiki-dark:#89DDFF">"</span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">:</span><span style="--shiki-light:#0000FF;--shiki-dark:#F78C6C"> null</span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">,</span><span style="--shiki-light:#CD3131;--shiki-dark:#FF5370"> #</span><span style="--shiki-light:#CD3131;--shiki-dark:#FF5370"> 样本名</span></span>
+<span class="line"><span style="--shiki-light:#0451A5;--shiki-dark:#89DDFF">  "</span><span style="--shiki-light:#0451A5;--shiki-dark:#C792EA">cellranger_count_workflow.secondary</span><span style="--shiki-light:#0451A5;--shiki-dark:#89DDFF">"</span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">:</span><span style="--shiki-light:#A31515;--shiki-dark:#89DDFF"> "</span><span style="--shiki-light:#A31515;--shiki-dark:#C3E88D">False</span><span style="--shiki-light:#A31515;--shiki-dark:#89DDFF">"</span><span style="--shiki-light:#CD3131;--shiki-dark:#FF5370"> #</span><span style="--shiki-light:#CD3131;--shiki-dark:#FF5370"> 是否使用cellranger的聚类分析</span></span>
+<span class="line"><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">}</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
 
 

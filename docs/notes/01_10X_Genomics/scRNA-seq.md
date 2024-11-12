@@ -4,6 +4,8 @@ createTime: 2024/10/30 11:20:18
 permalink: /01_10X_Genomics/scRNA-seq/
 ---
 
+> [WDL代码](https://github.com/rnacentre/WDL_Tools/tree/main/_CellRanger_count)
+
 ## 10X Genomics scRNA-seq
 
 为了便于工作流的可重复性，我们推荐您使用json文件来描述和存档您的实验参数。
@@ -145,3 +147,21 @@ permalink: /01_10X_Genomics/scRNA-seq/
   > 非常好的问题！当你尝试把一件简单的事情重复做上一万遍的时候，其复杂度将会指数增加📈。
 
 **当然不是**，我们在这里只展示了BioOS的冰山一角，BioOS的真正能力将在您尝试构建数据模型/实体之后展现。下面，让我们从一个稍微复杂的例子开始，一步一步的学习如何调度BioOS强大的计算能力。
+
+## JSON 注释
+
+```json
+{
+  # 逐行注释
+  "cellranger_count_workflow.chemistry": "auto", # chemistry选择 3'v2 等
+  "cellranger_count_workflow.cpu": 32, # cpu 核心数
+  "cellranger_count_workflow.disk_space": "300 GB", # 数据盘尺寸
+  "cellranger_count_workflow.fastq_file_paths": null, # 原始数据文件路径
+  "cellranger_count_workflow.memory": "225 GB", # 内存
+  "cellranger_count_workflow.no_bam": "False", # 是否不生成bam文件
+  "cellranger_count_workflow.reference_genome_tar_gz": "s3://bioos-wcnjupodeig44rr6t02v0/Example_10X_data/RAW/refdata-cellranger-GRCh38-3.0.0.tar.gz", # 参考基因组文件路径
+  "cellranger_count_workflow.run_id": null, # 运行ID
+  "cellranger_count_workflow.sample": null, # 样本名
+  "cellranger_count_workflow.secondary": "False" # 是否使用cellranger的聚类分析
+}
+```
