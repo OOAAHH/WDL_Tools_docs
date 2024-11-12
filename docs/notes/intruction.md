@@ -34,6 +34,9 @@ What we have,now
 Update
 -----------------------
 
+### 2024.11.7 : Docs update
+**NOW** our new docs website is online, we will annotate all of the WDL files, in the form of json line by line.
+
 ### 2024.10.10 : let's have a try
 Try using rust as an encapsulation for the command part of the wdl, replacing python.
 The results are here: `_SRAtoFastqgz/2.0_rust`. 
