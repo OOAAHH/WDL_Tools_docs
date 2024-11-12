@@ -59,7 +59,7 @@ Workspace是BioOS中的重要概念，是你的代码和数据存储的抽象概
 这个过程如下图所示
 
 <ImageCard
-  image="/images/WDLinput.gif"
+  image="../images/WDLinput.gif"
   title="导入工作流"
   description="跟随“蓝色按钮”的指引，完成工作流的导入。记得为工作流命名，并撰写注释。"
   href="/"

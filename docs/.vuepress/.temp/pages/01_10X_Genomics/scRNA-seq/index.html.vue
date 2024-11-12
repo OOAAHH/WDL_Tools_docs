@@ -48,7 +48,7 @@
 <p>然后，点击页面上的绿色按钮&quot;开始分析&quot;，等待任务完成。</p>
 <p><img src="@source/notes/01_10X_Genomics/scfig1_gif.gif" alt="图片"></p>
 <ImageCard
-  image="./scfig1_gif.gif"
+  image="../../images/scfig1_gif.gif"
   title="注意右上角的绿色按钮"
   description="注意右上角的绿色按钮，点击即可开始分析，并在3秒后自动跳转到分析历史界面。"
   href="/"
