@@ -6,7 +6,7 @@ import { enNotes, zhNotes } from './notes'
  * @see https://theme-plume.vuejs.press/config/basic/
  */
 export default defineThemeConfig({
-  logo: '/Pics/logo.png',
+  logo: '/images/logo.png',
   // your git repo url
   docsRepo: '',
   docsDir: 'docs',
@@ -20,7 +20,7 @@ export default defineThemeConfig({
   locales: {
     '/': {
       profile: {
-        avatar: '/Pics/logo.png',
+        avatar: '/images/logo.png',
         name: 'RiboCV',
         description: 'Docs here',
         // circle: true,
@@ -33,7 +33,7 @@ export default defineThemeConfig({
     },
     '/en/': {
       profile: {
-        avatar: '/Pics/logo.png',
+        avatar: '/images/logo.png',
         name: 'RiboCV',
         description: 'Docs here',
         // circle: true,
