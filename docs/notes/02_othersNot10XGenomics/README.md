@@ -8,7 +8,7 @@ permalink: /02_othersNot10XGenomics/
 
 > 统一使用StarSolo工具，但每种组学分别对应不同的参数文件。
 
-- [Smart-seq2](./onProgress.md)
-- [Drop-seq](./onProgress.md)
-- [Seq-well](./onProgress.md)
-- [BD-Rhapsody](./onProgress.md)
+- [Smart-seq2](../onProgress.md)
+- [Drop-seq](../onProgress.md)
+- [Seq-well](../onProgress.md)
+- [BD-Rhapsody](../onProgress.md)
