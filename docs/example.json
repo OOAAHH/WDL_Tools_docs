@@ -1,0 +1,6 @@
+{
+  "example_workflow.cpu": 1,
+  "example_workflow.disk_space": "150 GB",
+  "example_workflow.fastq_file_paths": "this.fastqgz",
+  "example_workflow.sample_name": "this.input-cram"
+}

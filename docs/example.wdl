@@ -55,7 +55,7 @@ task rename_fastq_files_based_on_size {
   }
 
   runtime {
-    docker: "python:3.9.19-slim-bullseye"
+    docker: "registry-vpc.miracle.ac.cn/gznl/ooaahhdocker/python_pigz:1.0"
     cpu: cpu
     disk: disk_space
   }

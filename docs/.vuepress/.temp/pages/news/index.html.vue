@@ -36,6 +36,8 @@
 </li>
 </ul>
 <h2 id="update" tabindex="-1"><a class="header-anchor" href="#update"><span>Update</span></a></h2>
+<h3 id="_2024-11-7-docs-update" tabindex="-1"><a class="header-anchor" href="#_2024-11-7-docs-update"><span>2024.11.7 : Docs update</span></a></h3>
+<p><strong>NOW</strong> our new docs website is online, we will annotate all of the WDL files, in the form of json line by line.</p>
 <h3 id="_2024-10-10-let-s-have-a-try" tabindex="-1"><a class="header-anchor" href="#_2024-10-10-let-s-have-a-try"><span>2024.10.10 : let's have a try</span></a></h3>
 <p>Try using rust as an encapsulation for the command part of the wdl, replacing python.
 The results are here: <code v-pre>_SRAtoFastqgz/2.0_rust</code>.</p>

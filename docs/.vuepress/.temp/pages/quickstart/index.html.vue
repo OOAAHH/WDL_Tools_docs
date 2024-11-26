@@ -4,7 +4,7 @@
 <p><mark>RiboCV</mark>是一个文档网站，在这里我们将展示如何使用BioOS上的计算资源。</p>
 </blockquote>
 <blockquote>
-<p>我们假设我们的用户唯一需要的前置知识是如何在计算机上熟练的使用浏览器、复制粘贴、点击鼠标。<s>您一定是会这个的，对吧。</s></p>
+<p>我们假设我们的用户唯一需要的前置知识是如何在计算机上熟练的使用浏览器、复制粘贴、点击鼠标。</p>
 </blockquote>
 <h3 id="写在开头" tabindex="-1"><a class="header-anchor" href="#写在开头"><span>写在开头</span></a></h3>
 <p>本文的目的在于让您快速对BioOS上的计算资源有初步的了解，并进行一些简单的操作。BioOS支持多种操作方式，包括网页、命令行、API等。本文将介绍如何通过<mark>网页</mark>操作BioOS。</p>
@@ -96,7 +96,7 @@
 <span class="line"><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">  }</span></span>
 <span class="line"></span>
 <span class="line"><span style="--shiki-light:#000000;--shiki-dark:#BBBBBB">  runtime </span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">{</span></span>
-<span class="line"><span style="--shiki-light:#000000;--shiki-dark:#BBBBBB">    docker</span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">:</span><span style="--shiki-light:#A31515;--shiki-dark:#89DDFF"> "</span><span style="--shiki-light:#A31515;--shiki-dark:#C3E88D">python:3.9.19-slim-bullseye</span><span style="--shiki-light:#A31515;--shiki-dark:#89DDFF">"</span></span>
+<span class="line"><span style="--shiki-light:#000000;--shiki-dark:#BBBBBB">    docker</span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">:</span><span style="--shiki-light:#A31515;--shiki-dark:#89DDFF"> "</span><span style="--shiki-light:#A31515;--shiki-dark:#C3E88D">registry-vpc.miracle.ac.cn/gznl/ooaahhdocker/python_pigz:1.0</span><span style="--shiki-light:#A31515;--shiki-dark:#89DDFF">"</span></span>
 <span class="line"><span style="--shiki-light:#000000;--shiki-dark:#BBBBBB">    cpu</span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">:</span><span style="--shiki-light:#000000;--shiki-dark:#BBBBBB"> cpu</span></span>
 <span class="line"><span style="--shiki-light:#000000;--shiki-dark:#BBBBBB">    disk</span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">:</span><span style="--shiki-light:#000000;--shiki-dark:#BBBBBB"> disk_space</span></span>
 <span class="line"><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">  }</span></span>
@@ -132,6 +132,94 @@
   href="/"
   author="Hughes"
   date="2024/10/30"
-/></div></template>
+/>
+<h3 id="🔍-认识bioos中存储数据的方式" tabindex="-1"><a class="header-anchor" href="#🔍-认识bioos中存储数据的方式"><span>🔍 <strong>认识BioOS中存储数据的方式</strong></span></a></h3>
+<blockquote>
+<p>在BioOS中，数据存储在<mark>桶</mark>中。</p>
+</blockquote>
+<p>这样有很多好处，比如：
+只要你有“钥匙”，即<mark>桶的访问密钥</mark>，你就可以任意访问这和使用个桶中的数据，参阅<a href="https://cloud.miracle.ac.cn/docs/6653/126131" target="_blank" rel="noopener noreferrer">数据管理</a>。</p>
+<ul>
+<li>数据可以被多个工作流使用</li>
+<li>数据可以被多个用户使用</li>
+<li>数据可以被重复使用</li>
+</ul>
+<blockquote>
+<p>当然你也可以自己上传数据到桶中。</p>
+</blockquote>
+<p>在我们的例子中，我们将使用数据模型，并将其挂载到我们的workspace中。</p>
+<ImageCard
+  image="../images/qu_1.gif"
+  title="使用公共数据"
+  description="跟随指引（dataset>选择数据集合>按meta信息选择数据集>点击“分析”按钮挂载数据到具体的workspace中），完成数据模型的导入。"
+  href="/"
+  author="Hughes"
+  date="2024/10/30"
+/>
+<h3 id="🔗-利用json传递计算参数" tabindex="-1"><a class="header-anchor" href="#🔗-利用json传递计算参数"><span>🔗 <strong>利用json传递计算参数</strong></span></a></h3>
+<blockquote>
+<p>在BioOS中，计算参数通过<mark>json</mark>文件传递。</p>
+</blockquote>
+<p>我们已经完成了前置工作，现在让我们回到我们的工作流，并为其添加计算参数。</p>
+<blockquote>
+<p>这里已经准备好了一个<mark>计算参数文件</mark>，您可以将其导入到BioOS中。</p>
+</blockquote>
+<p>这是我们的计算参数文件：</p>
+<div class="demo-wrapper has-title">
+  <div class="demo-head">
+    <div class="demo-ctrl"><i></i><i></i><i></i></div>
+    <h4 class="demo-title"><p>example.json</p></h4>
+  </div>
+  <div class="demo-container" >
+<div class="language-json line-numbers-mode" data-ext="json" data-title="json"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes light-plus aurora-x vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">{</span></span>
+<span class="line"><span style="--shiki-light:#0451A5;--shiki-dark:#89DDFF">  "</span><span style="--shiki-light:#0451A5;--shiki-dark:#C792EA">example_workflow.cpu</span><span style="--shiki-light:#0451A5;--shiki-dark:#89DDFF">"</span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">:</span><span style="--shiki-light:#098658;--shiki-dark:#F78C6C"> 1</span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">,</span></span>
+<span class="line"><span style="--shiki-light:#0451A5;--shiki-dark:#89DDFF">  "</span><span style="--shiki-light:#0451A5;--shiki-dark:#C792EA">example_workflow.disk_space</span><span style="--shiki-light:#0451A5;--shiki-dark:#89DDFF">"</span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">:</span><span style="--shiki-light:#A31515;--shiki-dark:#89DDFF"> "</span><span style="--shiki-light:#A31515;--shiki-dark:#C3E88D">150 GB</span><span style="--shiki-light:#A31515;--shiki-dark:#89DDFF">"</span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">,</span></span>
+<span class="line"><span style="--shiki-light:#0451A5;--shiki-dark:#89DDFF">  "</span><span style="--shiki-light:#0451A5;--shiki-dark:#C792EA">example_workflow.fastq_file_paths</span><span style="--shiki-light:#0451A5;--shiki-dark:#89DDFF">"</span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">:</span><span style="--shiki-light:#A31515;--shiki-dark:#89DDFF"> "</span><span style="--shiki-light:#A31515;--shiki-dark:#C3E88D">this.fastqgz</span><span style="--shiki-light:#A31515;--shiki-dark:#89DDFF">"</span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">,</span></span>
+<span class="line"><span style="--shiki-light:#0451A5;--shiki-dark:#89DDFF">  "</span><span style="--shiki-light:#0451A5;--shiki-dark:#C792EA">example_workflow.sample_name</span><span style="--shiki-light:#0451A5;--shiki-dark:#89DDFF">"</span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">:</span><span style="--shiki-light:#A31515;--shiki-dark:#89DDFF"> "</span><span style="--shiki-light:#A31515;--shiki-dark:#C3E88D">this.input-cram</span><span style="--shiki-light:#A31515;--shiki-dark:#89DDFF">"</span></span>
+<span class="line"><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">}</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></div><p>这是我们的输出文件：</p>
+<div class="demo-wrapper has-title">
+  <div class="demo-head">
+    <div class="demo-ctrl"><i></i><i></i><i></i></div>
+    <h4 class="demo-title"><p>example_output.json</p></h4>
+  </div>
+  <div class="demo-container" >
+<div class="language-json line-numbers-mode" data-ext="json" data-title="json"><button class="copy" title="复制代码" data-copied="已复制"></button><pre class="shiki shiki-themes light-plus aurora-x vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">{</span></span>
+<span class="line"><span style="--shiki-light:#0451A5;--shiki-dark:#89DDFF">    "</span><span style="--shiki-light:#0451A5;--shiki-dark:#C792EA">example_workflow.renamed_files</span><span style="--shiki-light:#0451A5;--shiki-dark:#89DDFF">"</span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">:</span><span style="--shiki-light:#A31515;--shiki-dark:#89DDFF"> "</span><span style="--shiki-light:#A31515;--shiki-dark:#C3E88D">this.fastqgz3</span><span style="--shiki-light:#A31515;--shiki-dark:#89DDFF">"</span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">,</span></span>
+<span class="line"><span style="--shiki-light:#0451A5;--shiki-dark:#89DDFF">    "</span><span style="--shiki-light:#0451A5;--shiki-dark:#C792EA">example_workflow.sample_name_out</span><span style="--shiki-light:#0451A5;--shiki-dark:#89DDFF">"</span><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">:</span><span style="--shiki-light:#A31515;--shiki-dark:#89DDFF"> "</span><span style="--shiki-light:#A31515;--shiki-dark:#C3E88D">this.Tpye</span><span style="--shiki-light:#A31515;--shiki-dark:#89DDFF">"</span></span>
+<span class="line"><span style="--shiki-light:#000000;--shiki-dark:#89DDFF">}</span></span></code></pre>
+
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></div><p>这次我们使用的例子是一个简单的计算任务，它将根据文件的大小，重命名文件。在实际使用中，您可以编写更加复杂的工作流。</p>
+<ImageCard
+  image="../images/qu_2.gif"
+  title="添加计算参数"
+  description="跟随指引，完成计算参数的添加。"
+  href="/"
+  author="Hughes"
+  date="2024/10/30"
+/>
+<p>我们完成了工作流和计算参数的准备工作，只需使用this.语法，即可实现对我们当前选中的数据模型的操作。现在让我们运行工作流。</p>
+<h3 id="🚀-运行工作流并查看运行结果" tabindex="-1"><a class="header-anchor" href="#🚀-运行工作流并查看运行结果"><span>🚀 <strong>运行工作流并查看运行结果</strong></span></a></h3>
+<blockquote>
+<p>运行工作流的过程如下图所示：</p>
+</blockquote>
+<ImageCard
+  image="../images/qu_3.gif"
+  title="运行工作流"
+  description="点击开始运行，完成工作流的投递。在运行过程中，您可以点击“运行日志”查看工作流的运行状态。在运行结束后，您可以点击运行结果“查看”或“下载”访问工作流的输出。"
+  href="/"
+  author="Hughes"
+  date="2024/10/30"
+/>
+<blockquote>
+<p>日志中会显示工作流的运行状态，如果运行失败，您可以根据错误信息进行调整。
+尤其是您有了一定的开发经验后，这里显示的日志信息可能对您调整工作流有很大帮助。</p>
+</blockquote>
+<p>我们推荐您在运行参数里使用this.语法，来引用当前选中的数据模型。这样，您的输出结果将自动和输入数据关联起来，方便您后续的分析。尤其是在您需要多次运行同一工作流时，这一点尤为重要。</p>
+<h2 id="总结" tabindex="-1"><a class="header-anchor" href="#总结"><span>总结</span></a></h2>
+<p>我们通过一个简单的例子，展示了如何在BioOS中完成一个工作流的导入、数据模型的使用、计算参数的传递、工作流的运行以及工作流结果的查看。</p>
+<p>希望您对BioOS有了一个初步的了解，并能够利用BioOS完成更多的分析任务。</p>
+</div></template>
 
 
