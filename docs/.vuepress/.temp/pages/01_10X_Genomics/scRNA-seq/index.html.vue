@@ -4,8 +4,8 @@
 <h2 id="_10x-genomics-scrna-seq" tabindex="-1"><a class="header-anchor" href="#_10x-genomics-scrna-seq"><span>10X Genomics scRNA-seq</span></a></h2>
 <p>为了便于工作流的可重复性，我们推荐您使用json文件来描述和存档您的实验参数。</p>
 <h2 id="写在前面" tabindex="-1"><a class="header-anchor" href="#写在前面"><span>写在前面</span></a></h2>
-<p>这里会涉及到BioOS文件管理的相关内容，请参考<RouteLink to="/notes/BioOS/">BioOS文件管理</RouteLink></p>
-<p>在这里，我们假设您已经对平台的使用有了基础的了解，并创建了必要的文件夹。如果还没有，请参考<RouteLink to="/notes/BioOS/">动手学BioOS计算</RouteLink></p>
+<p>这里会涉及到BioOS文件管理的相关内容，请参考<a href="https://cloud.miracle.ac.cn/docs" target="_blank" rel="noopener noreferrer">BioOS文件文档</a></p>
+<p>在这里，我们假设您已经对平台的使用有了基础的了解，并创建了必要的文件夹。如果还没有，请参考<RouteLink to="/notes/quickstart.html">快速开始</RouteLink></p>
 <p>请注意，我们不要求您对json文件、WDL文件或者云计算有深入的了解，您只需要知道如何使用json文件来描述您的实验参数。我们的目标是您只需要知道如何“复制、粘贴”就能完成您的实验。</p>
 <p>让我们开始吧！</p>
 <h3 id="对于一个典型的10x-genomics-scrna-seq实验-我们推荐使用如下的json文件" tabindex="-1"><a class="header-anchor" href="#对于一个典型的10x-genomics-scrna-seq实验-我们推荐使用如下的json文件"><span>对于一个典型的10X Genomics scRNA-seq实验，我们推荐使用如下的json文件：</span></a></h3>

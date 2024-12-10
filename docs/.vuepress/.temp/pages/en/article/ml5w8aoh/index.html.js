@@ -1,5 +1,5 @@
 import comp from "/Users/hughes/docs/WDL_Tools_docs/docs/.vuepress/.temp/pages/en/article/ml5w8aoh/index.html.vue"
-const data = JSON.parse("{\"path\":\"/en/article/ml5w8aoh/\",\"title\":\"Custom Component\",\"lang\":\"en-US\",\"frontmatter\":{\"title\":\"Custom Component\",\"tags\":[\"preview\",\"component\"],\"createTime\":\"2024/10/30 11:12:46\",\"permalink\":\"/en/article/ml5w8aoh/\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0.05,\"words\":15},\"filePathRelative\":\"en/preview/custom-component.example.md\",\"categoryList\":[{\"id\":\"5ebeb6\",\"sort\":10000,\"name\":\"preview\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/en/article/ml5w8aoh/\",\"title\":\"Custom Component\",\"lang\":\"en-US\",\"frontmatter\":{\"title\":\"Custom Component\",\"tags\":[\"preview\",\"component\"],\"createTime\":\"2024/10/30 11:12:46\",\"permalink\":\"/en/article/ml5w8aoh/\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0.05,\"words\":15},\"filePathRelative\":\"en/preview/custom-component.example.md\",\"categoryList\":[{\"id\":\"5ebeb6\",\"sort\":10001,\"name\":\"preview\"}],\"bulletin\":false}")
 export { comp, data }
 
 if (import.meta.webpackHot) {
