@@ -3,7 +3,7 @@
 <p>非常多的个人经验的引入，仅供参考。</p>
 </blockquote>
 <ul>
-<li><RouteLink to="/notes/04_codeStyle/simpleWDL.html">WDL 代码模式，最简代码 模式。</RouteLink></li>
+<li><RouteLink to="/notes/04_codeStyle/simpleWDL.html">WDL 代码模式，最简代码模式。</RouteLink></li>
 <li><RouteLink to="/notes/onProgress.html">WDL 加速？1%的加速都能带来巨大的收益。(TODO)</RouteLink></li>
 <li><RouteLink to="/notes/onProgress.html">docker 镜像从哪里来，到哪里去。(TODO)</RouteLink></li>
 <li><RouteLink to="/notes/04_codeStyle/meandAI.html">人工智能协助代码开发</RouteLink></li>

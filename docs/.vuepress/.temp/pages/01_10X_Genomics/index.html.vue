@@ -9,6 +9,12 @@
 <li><RouteLink to="/notes/01_10X_Genomics/Spatial-seq.html">Spatial-seq</RouteLink></li>
 <li><RouteLink to="/notes/01_10X_Genomics/Arg-multi-data.html">Arg multi data</RouteLink></li>
 </ul>
+<blockquote>
+<p>补充工具</p>
+</blockquote>
+<ul>
+<li><RouteLink to="/notes/01_10X_Genomics/SRA2Fastq.html">把SRA文件转换为fastq文件</RouteLink></li>
+</ul>
 </div></template>
 
 

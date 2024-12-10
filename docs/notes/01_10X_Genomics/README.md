@@ -13,3 +13,7 @@ permalink: /01_10X_Genomics/
 - [VDJ-seq](./VDJ-seq.md)
 - [Spatial-seq](./Spatial-seq.md)
 - [Arg multi data](./Arg-multi-data.md)
+
+> 补充工具
+
+- [把SRA文件转换为fastq文件](./SRA2Fastq.md)
